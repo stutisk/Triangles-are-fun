@@ -1,0 +1,191 @@
+:root {
+    --primary-color:#598b87;     
+    --off-white:#E5E7EB;
+    --dark-gray:#6B7280;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  #main-container1{
+      text-align: center;
+     margin: 0 auto;
+      width: 60%;
+  }
+  #quiz-p{
+      font-size: larger;
+      padding:2rem 2rem;
+  }
+
+  .question-container{
+      padding-top: 0.5rem;
+      font-size: larger;
+      background-color: #bbeeea;
+       height: 100px;
+
+  }
+  .question-container1{
+      background-color: antiquewhite;
+      height: 100px;
+      padding-top: 0.5rem;
+      font-size: larger;
+  }
+
+  .question-container p{
+      font-weight: 200;
+      margin: auto;
+      color: #080808;
+      font-style: oblique;
+  }
+  .question-container1 p{
+    font-weight: 200;
+    margin: auto;
+    color: #080808;
+    font-style: oblique;
+    padding-bottom: 0.5rem;
+}
+
+body{
+    text-align: center;
+
+
+}
+#main-container{
+    margin-top: 3px;
+}
+.angle-input{
+    font-size: larger;
+    color: var(--primary-color);
+    width: 256px;
+    font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  margin: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 258px;
+}
+.input-label p {
+    font-size: larger;
+    margin: 0.5rem;
+  }
+#btn-isTriangle{
+    background: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: large;
+  cursor: pointer;
+  outline: #fff;
+  margin: 1rem auto;
+  display: block;
+  text-decoration: none;
+}
+
+.navibar{
+    background-color:var(--primary-color);
+    color:rgb(34, 0, 0);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation-header{
+    color:rgb(16, 24, 19);
+    font-weight: bolder;
+    font-size: 2rem;
+    
+}
+
+.list-Items{
+    display: inline;
+    
+
+
+}
+
+.link{
+    color: rgb(230, 223, 223);
+    text-decoration: none;
+    padding: 3rem;
+    font-size: larger;
+
+}
+
+#link{
+    color: rgb(230, 223, 223);
+    text-decoration: none;
+    padding: 3rem;
+    font-size: larger;
+
+}
+.link-Active{
+    font-weight:bold;
+}
+#formula{
+    margin: auto;
+}
+#btn-calculate{
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: 1rem auto;
+    display: block;
+}
+
+.backContainer{
+    background: rgb(190, 223, 228);
+    border:rgb(8, 15, 1);
+    color: rgb(8, 1, 1);
+    width: auto;
+    border-radius: 5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: rgb(173, 49, 49);
+    margin: 1rem auto;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+ 
+}
+.footer-container{
+    
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .footer-list {
+    margin: 1rem;
+  }
+  a,
+li {
+  display: inline;
+}
+  
+  .one {
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 28px;
+    display: inline;
+
+
+text-align: center;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    font-weight: bold;
+    
+  }
+  a.one:hover {
+    background-color:rgb(34, 76, 155);
+    font-size:25px;
+  }
