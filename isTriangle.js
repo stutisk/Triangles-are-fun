@@ -11,6 +11,9 @@ function isTriangle(){
     else{
         outPut.innerText="its  not a traingle";
     }
+    else{
+        outPut.innerText="please enter all the angles";
+    }
 }
 
 
