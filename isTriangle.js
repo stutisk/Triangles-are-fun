@@ -1,14 +1,14 @@
-const inputs=document.querySelectorAll(".angle-input");
+const anglesInput=document.querySelectorAll(".angle-input");
 const btnSubmit=document.querySelector("#btn-isTriangle");
 const outPut=document.querySelector("#output");
 
 
 function isTriangle(){
-     if (inputs[0].value && inputs[1].value && inputs[2].value) {
+     if (anglesInput[0].value && anglesInput[1].value && anglesInput[2].value) {
     if (
-      Number(inputs[0].value) +
-        Number(inputs[1].value) +
-        Number(inputs[2].value) ==
+      Number(anglesInput[0].value) +
+        Number(anglesInput[1].value) +
+        Number(anglesInput[2].value) ==
       180
     ) {
       showMessage("It's a Triangle!!");
@@ -16,7 +16,7 @@ function isTriangle(){
       showMessage("it is not  a Triangle.");
     }
   } else {
-    showMessage("Please enter all angles...");
+    showMessage("Please enter all angles");
   }
 });
 
