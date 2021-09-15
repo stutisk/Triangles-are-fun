@@ -8,7 +8,7 @@ function isTriangle(){
     if(sumofangles===180){
         outPut.innerText="its a traingle";
     }
-    else{
+    else if {
         outPut.innerText="its  not a traingle";
     }
     else{
