@@ -4,17 +4,21 @@ const outPut=document.querySelector("#output");
 
 
 function isTriangle(){
+     if(calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value){
     const sumofangles=calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
     if(sumofangles===180){
         outPut.innerText="its a traingle";
     }
-    else if {
+    else  {
         outPut.innerText="its  not a traingle";
     }
-    else{
-        outPut.innerText="please enter all the angles";
+    
+   else  {
+        outPut.innerText="enter all the angles";
     }
 }
+    
+                            
 
 
 
