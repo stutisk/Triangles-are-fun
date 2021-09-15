@@ -21,11 +21,11 @@ function isTriangle(){
 });
 
                             
-
+btnSubmit.addEventListener("click",isTriangle)
 
 
 const showMessage(msg){
      outPut.innerText= msg;
+};
 
 
-btnSubmit.addEventListener("click",isTriangle)
