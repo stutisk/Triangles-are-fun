@@ -22,3 +22,4 @@ function isTriangle() {
     outPut.innerText = "sorry ! The angle doesn't form a triangle";
   }
 }
+btnSubmit.addEventListener("click", isTriangle);
