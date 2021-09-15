@@ -4,29 +4,28 @@ const outPut=document.querySelector("#output");
 
 
 function isTriangle(){
-     if(calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value){
-    const sumofangles=calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
-    if(sumofangles===180){
-        outPut.innerText="its a traingle";
+     if (inputs[0].value && inputs[1].value && inputs[2].value) {
+    if (
+      Number(inputs[0].value) +
+        Number(inputs[1].value) +
+        Number(inputs[2].value) ==
+      180
+    ) {
+      showMessage("It's a Triangle!!");
+    } else {
+      showMessage("it is not  a Triangle.");
     }
-    else  {
-        outPut.innerText="its  not a traingle";
-    }
-    
-   else  {
-        outPut.innerText="enter all the angles";
-    }
-}
-    
+  } else {
+    showMessage("Please enter all angles...");
+  }
+});
+
                             
 
 
 
-function calculateSumOfAngles(angle1,angle2,angle3){
-        const sumofangles=angle1+angle2+angle3;
-        return(sumofangles);
-}
-
+const showMessage(msg){
+     outPut.innerText= msg;
 
 
 btnSubmit.addEventListener("click",isTriangle)
