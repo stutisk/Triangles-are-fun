@@ -1,21 +1,34 @@
-const baseInputs = document.querySelectorAll(".angle-input");
+const inputs = document.querySelectorAll(".angle-input");
 const areabtn = document.querySelector("#btn-calculate");
 const outPut = document.querySelector("#output");
 
 
-function multiply(a,b){
-    return a*b;
+
+
+
+
+function multiply(){
+    var a = Number(inputs[0].value);
+	var b = Number(inputs[1].value);
+    if (a == "" || b == "") {
+		outPut.innerText = "Please enter both the values";
+	} 
+    else if (a < 0 || b < 0) {
+		outPut.innerText = "Please enter positive values";
+	}
+    else{
+        areaOfTriangle(a,b);
+    }
+    
 }
-
-
-function areaOfTriangle(){
-    const product = multiply(Number(baseInputs[0].value),Number(baseInputs[1].value));
-    const answers = 0.5*product;
+function areaOfTriangle(a,b){
+    const answers = 0.5 *a * b;
   
-    outPut.innerText = "The area is "+ answers;
+outPut.innerText = "The area is "+ answers;
 }
+    
+ 
 
 
 
-
-areabtn.addEventListener('click', areaOfTriangle);
+areabtn.addEventListener('click', multiply);
