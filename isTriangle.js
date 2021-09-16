@@ -1,49 +1,29 @@
-const anglesInput=document.querySelectorAll(".angle-input");
-const btnSubmit=document.querySelector("#btn-isTriangle");
-const outPut=document.querySelector("#output");
+var input = document.querySelectorAll(".angle-input");
+var check = document.querySelector("#btn-isTriangle");
+var output = document.querySelector("#output");
 
+function checkTraingle(angle1, angle2, angle3) {
+	output.style.display = "block";
+	var sum_angle = angle1 + angle2 + angle3;
 
-<<<<<<< HEAD
-function isTriangle(){
-    const sumofangles=calculateSumOfAngles(Number(inputs[0].value),Number(inputs[1].value),Number(inputs[2].value));
-    if (sumofangles == "") {
-		outPut.innerText = "Please enter all the values";
-	} 
-    else if (sumofangles<0) {
-		outPut.innerText = "Please enter positive values";
-	} 
-     else if (sumofangles===180){
-        outPut.innerText="its a traingle";
-    }
-    else{
-        outPut.innerText="its  not a traingle";
-    }
-=======
-function sumOfAngles(angle1, angle2, angle3) {
-  const sum = angle1 + angle2 + angle3;
-  return sum;
->>>>>>> b4b3de60794f7e323a2a8c71f38ea7fcac843d8e
+	if (sum_angle === 180) {
+		output.innerText = "Yes it is a traingle";
+	} else {
+		output.innerText = "No is it not a traingle";
+	}
 }
 
-function isTriangle() {
-  const sum = sumOfAngles(
-    Number(anglesInput[0].value),
-    Number(anglesInput[1].value),
-    Number(anglesInput[2].value)
-  );
-  if (sum === 180) {
-   
-    outPut.innerText = "yupieeeee!!, the angles form a triangle!";
-  } else {
-    
-    outPut.innerText = "sorry ! The angle doesn't form a triangle";
-  }
+function checkInput() {
+	output.style.display = "block";
+	var angle1 = Number(input[0].value);
+	var angle2 = Number(input[1].value);
+	var angle3 = Number(input[2].value);
+	if (angle1 == "" || angle2 == "" || angle3 == "") {
+		output.innerText = "Please enter all the values";
+	} else if (angle1 < 0 || angle2 < 0 || angle3 < 0) {
+		output.innerText = "Please enter positive values";
+	} else {
+		checkTraingle(angle1, angle2, angle3);
+	}
 }
-<<<<<<< HEAD
-
-
-
-btnSubmit.addEventListener("click",isTriangle)
-=======
-btnSubmit.addEventListener("click", isTriangle);
->>>>>>> b4b3de60794f7e323a2a8c71f38ea7fcac843d8e
+check.addEventListener("click", checkInput);
